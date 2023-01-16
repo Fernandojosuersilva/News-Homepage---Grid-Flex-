@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+        --Off-white: hsl(36, 100%, 99%);
+        --GrayishBlue: hsl(233, 8%, 79%);
+        --DarkGrayishBlue: hsl(236, 13%, 42%);
+        --VeryDarkBlue: hsl(240, 100%, 5%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(36, 100%, 99%);
+    /*min-height: 100vh;*/
+    width: 100%;
+    height: auto;
+}
+
+p{
+    font-size: 15px;
+    
+}
+
+.menu{
+    display: flex;
+    align-content: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+    
+}
+
+.logo{
+    flex: 50%;
+}
+.menu-btn-show{
+    display: flex;
+    
+}
+.menu-btn-show ul li{
+    display: flex;
+    float: left;
+    list-style: none;
+    margin: 1rem;
+    cursor: pointer;
+    color: hsl(240, 100%, 5%);
+    margin-top: 50px;
+}
+.menu-btn-show ul li:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+.icon-menu{
+    width: 30px;
+    height: 15px;
+}
+#icon{
+    display: none;
+}
+.icon-close{
+    display: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 2em;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: -10px;
+  
+}
+.img1{
+    display: flex;
+    max-width: 700px;
+}
+
+.img2, .img3, .img4{
+    width: 100px;
+}
+
+.blog1{
+    grid-column: 2span2;
+    grid-row: 1span;
+}
+.blog1-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.blog1-title{
+    font-size: 3rem;
+    color: hsl(240, 100%, 5%);
+    width: 300px;
+    font-weight: 800;
+}
+.blog1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog1-content p{
+    color: hsl(236, 13%, 42%);
+    margin: 10px;
+    line-height: 1.5;
+    width: 330px;
+    margin-left: -5px;
+}
+.blog1-content button{
+    padding: 15px;
+    width: 200px;
+    border: none;
+    background-color:  hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-weight: 700; 
+}
+.blog1-content button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.new-container{
+    grid-column: 2 span;
+    grid-row: 1 span;
+    background-color: hsl(240, 100%, 5%);
+    width: 100%;
+    
+}
+.new-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.blog2{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid  hsl(36, 100%, 99%);
+    padding: 8px;
+    
+}
+.blog2 h2{
+    color:  hsl(35, 77%, 62%);
+    font-size: 2rem;
+    margin: 10px 7px;
+}
+.new-title{
+    color: hsl(36, 100%, 99%);
+    font-size: 1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+.new-content{
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 2rem;
+    
+  
+}
+.blog2 :last-child{
+    border: none;
+}
+.new-title:hover{
+    color: hsl(35, 77%, 62%); 
+}
+
+.blog3{
+    display: flex;
+    grid-column: 3 span;
+    grid-row: 1 span;
+    column-gap: 1rem;
+    height: 125px;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.retroPC{
+    display: flex;
+    margin-right: 1.5rem;
+    
+}
+.blog-retroPC{
+    margin-left: 1rem;
+}
+
+/*all grey numbers*/
+.number{
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+    font-size: 2rem;
+    
+}
+
+.bottom-blog-p{
+    color: hsl(236, 13%, 42%);
+    margin-top: 5px;
+}
+
+.topLaptops{
+    display: flex;
+    margin-right: 1.5rem;
+}
+.blog-laptop{
+    margin-left: 1rem;
+}
+.gaming{
+    display: flex;
+    margin-left: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.blog-gaming{
+    margin-left: 1rem;
+}
+.bottom-blog-title{
+    color: hsl(240, 100%, 5%);
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 15px;
+}
+.bottom-blog-title:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+@media screen and (max-width: 500px){
+    
+    .grid-container{
+        height: auto;
+    }
+  
+    
+    ul li{
+        display: flex;
+        width: 80%;
+        text-align: right;
+        padding-right: 20px;
+        display: grid;
+}
+  
+    .menu-btn-show{
+        display: flex;
+        display: none;
+        float: right;
+        height: 100%;
+        width: 250px;
+        padding: 20px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: hsl(36, 100%, 99%);
+        overflow: hidden;
+
+    }
+   
+    #icon{
+        display: block;
+        cursor: pointer;
+    }
+    .icon-close{
+        cursor: pointer;
+        float: right;
+        position: relative;
+    }
+
+    .blog1{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        height: 1550px;
+    }
+    .blog1-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .new-container{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+    .blog3{
+        display: flex;
+        flex-direction: column;
+        
+    }
+  
+    .gaming{
+        margin-left: -0.5px;
+        margin-bottom: 15px;
+    }
+
+}
+
+
